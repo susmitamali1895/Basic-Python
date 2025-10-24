@@ -1,0 +1,6 @@
+p = int ("10")
+print(p, type(p))
+q = bool ("True")
+print(q, type(q))
+r = float ("16.94")
+print(r, type(r))
