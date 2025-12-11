@@ -1,3 +1,14 @@
-#summerise argument a, b, c and return thr result
-x = lambda a,b,c: a +b+c
-print(x(5,10,8))
+class Person:
+    def __init__(self,fname,lname):
+        self.firstname= fname
+        self.lastname = lname 
+
+    def printname(self):
+        print(self.firstname, self.lastname)
+
+class Student(Person):
+    def __init__(self,fname,lname):
+        super().__init__(fname, lname)
+
+x = Student("Mike", "Olsen")
+x.printname()
