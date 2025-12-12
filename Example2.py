@@ -1,13 +1,9 @@
 class Person:
-    def __init__(self,fname,lname):
-        self.firstname = fname
-        self.lastname = lname 
-    def printname(self):
-        print(self.firstname, self.lastname)
+    def __init__(self,name,age):
+        self.name =name
+        self.age = age 
 
-class Student(Person):
-    def __init__(self ,fname, lname):
-        Person.__init__(self,fname,lname)
-
-x = Student("Mike","Olsen")
-x.printname()
+    def __str__(self):
+        return f" {self.name}({self.age})"
+p1 = Person(" Susmita", 29)
+print(p1)
